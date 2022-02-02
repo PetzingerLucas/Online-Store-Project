@@ -1,3 +1,6 @@
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable no-duplicate-selectors */
 body {
   background-color: #023031;
 }
@@ -163,8 +166,6 @@ body {
   border: solid 1px rgb(241, 241, 241);
   border-radius: 0.5rem;
   padding: 10px;
-  position: fixed;
-  right: 10px;
   text-decoration: none;
   top: 10px;
 }
@@ -330,10 +331,8 @@ body {
   background-color: darkcyan;
   border-radius: 0.25rem;
   color: white;
-  font-size: 1rem;
-  margin-left: 10px;
   transition: all 0.25s;
-  width: 150px;
+  width: 100%;
 }
 
 .card-button:hover {
@@ -567,8 +566,6 @@ body {
   box-shadow: 0 3px 5px 2px #00000025;
   color: black;
   padding: 5px;
-  position: fixed;
-  right: 60px;
   top: 30px;
 }
 
@@ -583,4 +580,90 @@ body {
   position: fixed;
   right: 120px;
   top: 40px;
+}
+
+
+@media screen and ( max-width : 600px ) and ( max-height : 920px ) {
+
+  body {
+    zoom: 75%;
+  }
+
+
+  .label-navbar {
+    width: 100%;
+  }
+
+  .searchInputLabel {
+    margin-left: 10%;
+  }
+
+  .searchInputLabel button {
+    margin: 5%;
+    transform: translateX(75%);
+    zoom: 150%;
+  }
+
+
+  .categorie-form {
+    transform: translateY(-65px);
+    z-index: 1;
+    zoom: 190%;
+
+
+  }
+
+  .div-products {
+    margin-top: 200px;
+    transform: translateX(-150%);
+  }
+
+  .div-product-info {
+    zoom: 75%;
+  }
+
+  .parcelamento {
+    margin-left: 3%;
+    width: 90%;
+  }
+
+  .cards-logo {
+    margin-left: 3%;
+    width: 90%;
+  }
+
+  .product {
+    width: 150%;
+    zoom: 150%;
+
+  }
+
+  .cart-item {
+    zoom: 90%;
+  }
+
+  .checkout-page {
+    display: block;
+    flex-direction: column;
+  }
+
+  .checkout-items {
+    margin-left: 50px;
+    width: 80%;
+  }
+
+  .pagamento {
+    transform: translateX(7.5px);
+    width: 80%;
+  }
+
+
+  .header {
+    width: 100%;
+  }
+
+  .album-page {
+    margin-left: 5%;
+    zoom: 70%;
+  }
 }

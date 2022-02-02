@@ -9,6 +9,10 @@ class Category extends Component {
       console.log(label);
     }
     target.parentNode.classList.add('c-label-cyan');
+    const categories = document.querySelector('.categorie-form');
+    const checkbox = document.querySelector('#show-categories');
+    checkbox.checked = false;
+    categories.style.left = ('-300px');
   };
 
   render() {
