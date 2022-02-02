@@ -645,6 +645,7 @@ body {
   .checkout-page {
     display: block;
     flex-direction: column;
+    zoom: 80%;
   }
 
   .checkout-items {
